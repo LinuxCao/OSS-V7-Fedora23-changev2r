@@ -11,8 +11,13 @@ int main(int argc, char *argv[])
 {
 	if (strcmp(argv[1], "true") == 0)
 	{
-		printf("ChangeVirtual2Real\n");
-		ChangeVirtual2Real();
+		printf("ChangeVirtual2Real true\n");
+		ChangeVirtual2Real(1);
+	}
+	if (strcmp(argv[1], "false") == 0)
+	{
+		printf("ChangeVirtual2Real false\n");
+		ChangeVirtual2Real(0);
 	}
 	
 	return 0;
